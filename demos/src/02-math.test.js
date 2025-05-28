@@ -1,4 +1,4 @@
-const {sum, multiply, divide, average} = require('./02-math.js')
+const {sum, multiply, divide, average, subtract, isEven} = require('./02-math.js')
 
 test("add 1 + 3 should be 4", () => {
   const result = sum(1,3);
@@ -30,4 +30,30 @@ test("Average of nothing would be 0", () => {
   const values = [];
   const result = average(values);
   expect(result).toBe(null)
+})
+
+//Pruebas del examen
+test("The subtraction of 10 minus 3 should be 7", () => {
+  const result = subtract(10,3);
+  expect(result).toBe(7);
+})
+
+test("The subtraction of 3 minus 10 should be -7", () => {
+  const result = subtract(3,10);
+  expect(result).toBe(-7);
+})
+
+test("The number 2 is an even number.", () => {
+  const result = isEven(2);
+  expect(result).toBe(true);
+})
+
+test("The number 5 is an odd number.", () => {
+  const result = isEven(5);
+  expect(result).toBe(false);
+})
+
+test("The number 0 is an even number.", () => {
+  const result = isEven(0);
+  expect(result).toBe(true);
 })

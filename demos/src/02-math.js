@@ -18,4 +18,13 @@ const average = (values) => {
   return values.reduce((a,b) => a + b) / values.length;
 }
 
-module.exports = {sum, multiply, divide, average};
+function subtract(a, b) {
+  return a - b;
+}
+
+function isEven(n) {
+  if(n % 2 === 0) return true;
+  else return false;
+}
+
+module.exports = {sum, multiply, divide, average, subtract, isEven};
