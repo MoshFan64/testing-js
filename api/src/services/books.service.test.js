@@ -26,6 +26,8 @@ describe('Test for BooksService.', () => {
     service = new BooksService();
   });
 
+/*Pruebas para el método getBook*/
+
   describe('Test for getBooks.', () => {
   test('Should return a list of books.', async () => {
     /*Arrange: preparar el entorno*/
@@ -36,13 +38,11 @@ describe('Test for BooksService.', () => {
     expect(books.length).toEqual(1);
   });
 });
+/*describe('Test for createBooks.', () => {
+  test('Should create a new book.', async () => {
 
-});
-
-/*Pruebas para el método getBook*/
-
-
-/*describe('Test for createBooks', () => {
-
+  });
 })
 */
+
+});
